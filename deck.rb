@@ -10,4 +10,9 @@ class Deck
     @cards.empty?
   end
 
+  def get_card
+    @cards.shift
+  end
+
+
 end

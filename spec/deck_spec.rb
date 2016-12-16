@@ -4,7 +4,6 @@ describe Deck do
 
   let(:deck) { Deck.new([['Q1','A1'],['Q2','A2']]) }
   let(:empty_deck) { Deck.new([]) }
-  let(:card_1) { Card.new(['Q1','A1']) }
 
   it 'has cards' do
     expect(deck.cards).to all be_instance_of Card
@@ -21,7 +20,7 @@ describe Deck do
 
   describe "#get_card" do
     it "gets the next card in the deck" do
-      expect(deck.get_card).to eq card_1
+      expect(deck.get_card.question).to eq 'Q1'
     end
     it "removes card from the deck" do
       deck.get_card
