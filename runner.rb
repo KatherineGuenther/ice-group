@@ -5,6 +5,7 @@ filename = ARGV[0]
 cards = read_text_file(filename)
 deck = Deck.new(cards)
 view = View.new
+game = Game.new(deck)
 
 until deck.empty?
   current_card = deck.get_card
