@@ -11,7 +11,7 @@ module FileLiterator
       result << [lines[i].chomp, lines[i+1].chomp]
       i += 2
     end
-   p result
+   result
   end
 end
 
