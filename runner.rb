@@ -11,15 +11,15 @@ game = Game.new(deck)
 
 until deck.empty?
   current_card = deck.get_card
-  puts view.question(current_card)
-  guess = view.get_guess
+  puts View.question(current_card)
+  guess = View.get_guess
     if guess == current_card.answer
-      puts view.correct
+      puts View.correct
       game.increase_score
     else
-      puts view.wrong
+      puts View.wrong
     end
-    puts view.outcome(game.score)
+    puts View.outcome(game.score)
 end
 # STEP 2
   # Until the deck is empty, game presents front of card

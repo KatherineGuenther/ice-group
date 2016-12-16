@@ -4,7 +4,7 @@ module FileLiterator
   def self.read_text_file(filename)
     file_object = File.new(filename)
     lines = file_object.readlines
-    clean_lines = lines.delete_if {|index| index == "\n"}
+    lines.delete_if {|index| index == "\n"}
     result = []
     i = 0
     while i < lines.length
