@@ -1,3 +1,5 @@
+require_relative 'game'
+require_relative 'file_io'
 # STEP 1
 # User enters a file name to begin the game
 filename = ARGV[0]
