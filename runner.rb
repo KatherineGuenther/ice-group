@@ -1,3 +1,5 @@
+require_relative 'game'
+require_relative 'file_io'
 # STEP 1
 # User enters a file name to begin the game
 filename = ARGV[0]
@@ -5,6 +7,7 @@ filename = ARGV[0]
 cards = read_text_file(filename)
 deck = Deck.new(cards)
 view = View.new
+game = Game.new(deck)
 
 until deck.empty?
   current_card = deck.get_card
