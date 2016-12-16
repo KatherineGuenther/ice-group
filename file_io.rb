@@ -14,5 +14,3 @@ module FileLiterator
    result
   end
 end
-
-p FileLiterator.read_text_file('otter_flashcard_data.txt')
