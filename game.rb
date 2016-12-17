@@ -4,8 +4,8 @@ class Game
   attr_reader :score, :num_questions
 
   def initialize(deck)
-    @score = 0
     @deck = deck
+    @score = 0
     @num_questions = deck.cards.length
   end
 
