@@ -24,7 +24,7 @@ until deck.empty?
     puts view.correct_answer(current_card)
   end
 end
-puts view.outcome(game.score)
+puts view.outcome(game.score, game.num_questions)
 # STEP 2
   # Until the deck is empty, game presents front of card
     # User enters guess
