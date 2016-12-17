@@ -4,7 +4,7 @@ class View
   end
 
   def get_guess
-    gets.chomp
+    STDIN.gets.chomp
   end
 
   def correct
@@ -13,6 +13,10 @@ class View
 
   def wrong
     "Wrong!"
+  end
+
+  def correct_answer(card)
+    "The correct answer is: #{card.answer}\n\n"
   end
 
   def outcome(score)
