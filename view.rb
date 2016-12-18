@@ -19,8 +19,8 @@ class View
     "The correct answer is: #{card.answer}\n\n"
   end
 
-  def outcome(score)
-    "You correctly answered #{score[0]} of #{score[1]} cards."
+  def outcome(score, num_questions)
+    "You correctly answered #{score} of #{num_questions} cards."
   end
   # Outcome should receive two arguments from control
 end
