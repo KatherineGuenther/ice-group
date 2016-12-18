@@ -1,0 +1,9 @@
+skip a question
+
+if wrong answer is input, ask again at end
+
+shuffle questions: Ask random question
+
+run all flashcards (nighthawk, otter, raccoon) if ARGV is 'all'
+
+let user input just the name of the animal, find the proper file?
