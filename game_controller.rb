@@ -19,8 +19,7 @@ class GameController
 
   def play_card(card, view, game)
     puts view.question(card)
-    guess = view.get_guess
-    if guess == card.answer
+    if view.get_guess == card.answer
       puts view.correct
       game.increase_score
     else
