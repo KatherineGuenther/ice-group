@@ -11,6 +11,7 @@ class GameController
     cards = FileLiterator.read_text_file(filename)
     deck = Deck.new(cards)
     game = Game.new(deck)
+    view = View.new
 
     play_deck(deck, view, game)
     display_outcome(view, game)
